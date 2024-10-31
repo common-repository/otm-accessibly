@@ -1,0 +1,41 @@
+{
+  "name": "accessibly",
+  "version": "2.7.7",
+  "description": "Make your website accessible to everyone. Helps with ADA & WCAG Compliance.",
+  "main": "index.js",
+  "scripts": {
+    "wp-test": "echo \"Error: no test specified\" && exit 1",
+    "wp-build": "wp-scripts build",
+    "wp-start": "wp-scripts start",
+    "wp-start:hot": "wp-scripts start --hot",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "copy-trunk": "rsync -av --progress ./ ./otm-accessibly/trunk --exclude otm-accessibly --exclude node_modules --exclude .git",
+    "push-to-wp": "cd ./otm-accessibly/trunk && svn up"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "dotenv": "^16.0.0",
+    "next": "^12.1.6",
+    "postcss-cli": "^9.1.0",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-dom": "^18.1.0",
+    "react-ga": "^3.3.1",
+    "react-router-dom": "^6.3.0",
+    "speak-tts": "^2.0.8"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^22.5.0",
+    "autoprefixer": "^10.4.7",
+    "dotenv-webpack": "^8.0.1",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

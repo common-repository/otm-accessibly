@@ -1,0 +1,19 @@
+{
+  "extends": "@roots/bud/config/jsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "allowJs": true,
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+    },
+    "types": [
+      "@roots/bud",
+      "@roots/bud-swc",
+      "@roots/bud-postcss",
+      "@roots/bud-react"
+    ]
+  },
+  "include": ["./bud.config.ts", "./src"],
+  "exclude": ["./node_modules", "./dist"],
+}

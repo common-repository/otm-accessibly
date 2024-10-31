@@ -1,0 +1,41 @@
+{
+  "name": "accessibly-wordpress",
+  "description": "project bootstrapped with @roots/create-bud-app",
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ReinisL/app.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "browserslist": [
+    "extends @roots/browserslist-config"
+  ],
+  "scripts": {
+    "build": "bud build production",
+    "dev": "bud build development",
+    "ci": "bud build --no-cache"
+  },
+  "devDependencies": {
+    "@roots/bud": "^6.13.1",
+    "@roots/bud-babel": "^6.13.1",
+    "@roots/bud-eslint": "^6.13.1",
+    "@roots/bud-postcss": "^6.13.1",
+    "@roots/bud-react": "^6.13.1",
+    "@roots/bud-stylelint": "^6.13.1",
+    "@roots/bud-swc": "^6.13.1",
+    "@roots/bud-tailwindcss": "^6.13.1"
+  },
+  "dependencies": {
+    "@linaria/babel-preset": "^4.4.5",
+    "@linaria/core": "^4.2.10",
+    "@linaria/react": "^4.3.8",
+    "axios": "^1.4.0",
+    "penpal": "^5.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.3"
+  }
+}

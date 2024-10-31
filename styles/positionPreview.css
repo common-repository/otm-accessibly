@@ -1,0 +1,104 @@
+#accessibility-widget svg {
+  fill: none;
+  stroke: none;
+}
+
+#accessibility-widget svg path,
+#accessibility-widget svg rect {
+  stroke: none !important;
+}
+
+#accessibility-widget svg.accessibility-box-close,
+#accessibility-widget .accessibility-reset svg {
+  width: auto !important;
+}
+
+#accessibly-trigger {
+  cursor: pointer;
+}
+
+.accessibly-hide-btn {
+  position: absolute;
+  right: 38px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 9px;
+  cursor: pointer;
+}
+.accessibly-hide-btn p {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.accessibly-btn-big {
+  width: 64px;
+  height: 64px;
+}
+.accessibly-btn-big:after {
+  width: 64px;
+  height: 64px;
+}
+
+.accessibly-btn-small {
+  width: 50px;
+  height: 50px;
+}
+.accessibly-btn-small:after {
+  width: 50px;
+  height: 50px;
+}
+
+.accessibly-btn-xs-small {
+  width: 40px !important;
+  height: 40px !important;
+  padding: 5px;
+}
+.accessibly-btn-xs-small:after {
+  width: 40px;
+  height: 40px;
+}
+
+.accessibility-menu-btn {
+  cursor: pointer;
+  color: #028ef6;
+  border: none;
+  z-index: 1;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15),
+    0 2px 4px 0 rgba(93, 100, 148, 0.2);
+  outline: none !important;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  position: relative;
+}
+.accessibility-menu-btn:hover {
+  transform: scale(1.1, 1.1);
+  opacity: 1 !important;
+}
+.accessibility-menu-btn:hover:after {
+  opacity: 1;
+}
+.accessibility-menu-btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.accessibility-menu-btn svg {
+  fill: #fff;
+  height: 100%;
+}
